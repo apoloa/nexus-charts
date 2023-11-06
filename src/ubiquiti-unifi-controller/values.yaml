@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: linuxserver/unifi-controller:latest
+  repository: linuxserver/unifi-controller
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 environment:
   PUID: "1000"

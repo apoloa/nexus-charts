@@ -3,12 +3,12 @@ entries:
   ubiquiti-unifi-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-06T22:44:23.527249+01:00"
+    created: "2023-11-06T23:09:50.730705+01:00"
     description: Ubiquiti Unifi Controller Helm Chart
-    digest: 76eefbb83e9587b6a05456d4abfc649e5add59935a5347364e3933fff206b10a
+    digest: bb225971e49c16a949fd9742d6ea23857b9ddf92c511794f328a1fb9dc11bd5e
     name: ubiquiti-unifi-controller
     type: application
     urls:
     - https://apoloa.github.io/nexus-charts/ubiquiti-unifi-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-06T22:44:23.526788+01:00"
+generated: "2023-11-06T23:09:50.730342+01:00"
