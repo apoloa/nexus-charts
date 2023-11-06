@@ -13,7 +13,7 @@ image:
 environment:
   PUID: "1000"
   PGID: "1000"
-  TZ: "Etc/UTC"
+  TZ: "Europe/Madrid"
   MEM_LIMIT: "1024"
   MEM_STARTUP: "1024"
 
