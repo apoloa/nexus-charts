@@ -1,0 +1,37 @@
+# Default values for ubiquiti-unifi-controller.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: lscr.io/linuxserver/unifi-controller
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+environment:
+  PUID: "1000"
+  PGID: "1000"
+  TZ: "Etc/UTC"
+  MEM_LIMIT: "1024"
+  MEM_STARTUP: "1024"
+
+volumes:
+  data: "/opt/Volumes/unifi-controller"
+
+service:
+  ports:
+    - name: webui
+      port: 8443
+      targetPort: 8443
+    - name: stun
+      port: 3478
+      targetPort: 3478
+      protocol: UDP
+    - name: unifi-discovery
+      port: 10001
+      targetPort: 10001
+      protocol: UDP
+
+resources: {}
