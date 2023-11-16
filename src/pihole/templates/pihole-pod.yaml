@@ -32,11 +32,6 @@ spec:
         limits:
           memory: {{ .Values.pihole.resources.limits.memory }}
           cpu: {{ .Values.pihole.resources.limits.cpu }}
-      volumeMounts:
-        - name: etc
-          mountPath: /etc/pihole
-        - name: dnsmasq
-          mountPath: /etc/dnsmasq.d
   volumes:
     - name: etc
       hostPath:
