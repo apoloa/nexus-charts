@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: linuxserver/unifi-controller
+  repository: lscr.io/linuxserver/unifi-controller
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -16,12 +16,18 @@ environment:
   TZ: "Europe/Madrid"
   MEM_LIMIT: "1024"
   MEM_STARTUP: "1024"
+  MONGO_USER: unifi
+  MONGO_PORT: 27017
+  MONGO_DBNAME: unifi
 
 volumes:
   data: "/opt/Volumes/unifi-controller"
 
 service:
   ports:
+    - name: app
+      port: 8080
+      targetPort: 8080
     - name: webui
       port: 8443
       targetPort: 8443

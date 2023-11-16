@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pihole
+  namespace: pihole
+spec:
+  hostNetwork: {{ .Values.pihole.hostNetwork }}
+  dnsPolicy: {{ .Values.pihole.dnsPolicy }}
+  dnsConfig:
+    nameservers:
+      - {{ .Values.pihole.dnsConfig.nameservers | join " - " }}
+  containers:
+    - name: pihole
+      image: {{ .Values.pihole.image }}
+      imagePullPolicy: IfNotPresent
+      env:
+        - name: TZ
+          value: "America/Los_Angeles"
+        - name: WEBPASSWORD
+          value: {{ .Values.pihole.webpassword }}
+      securityContext:
+        privileged: true
+      ports:
+        - containerPort: 53
+          protocol: TCP
+        # ... otros puertos ...
+      resources:
+        requests:
+          memory: {{ .Values.pihole.resources.requests.memory }}
+          cpu: {{ .Values.pihole.resources.requests.cpu }}
+        limits:
+          memory: {{ .Values.pihole.resources.limits.memory }}
+          cpu: {{ .Values.pihole.resources.limits.cpu }}
+      volumeMounts:
+        - name: etc
+          mountPath: /etc/pihole
+        - name: dnsmasq
+          mountPath: /etc/dnsmasq.d
+  volumes:
+    - name: etc
+      hostPath:
+        path: /data/pihole/etc
+        type: Directory
+    - name: dnsmasq
+      hostPath:
+        path: /data/pihole/dnsmasq.d
+        type: Directory

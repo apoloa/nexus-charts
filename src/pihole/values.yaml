@@ -1,0 +1,15 @@
+pihole:
+  image: pihole/pihole:2021.10
+  webpassword: "pihole"
+  resources:
+    requests:
+      memory: "128Mi"
+      cpu: "100m"
+    limits:
+      memory: "2Gi"
+      cpu: "1"
+  hostNetwork: true
+  dnsPolicy: "None"
+  dnsConfig:
+    nameservers:
+      - 1.1.1.1
