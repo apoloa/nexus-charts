@@ -1,6 +1,7 @@
 pihole:
   image: pihole/pihole:2021.10
   webpassword: "pihole"
+  tz: "Europe/Madrid"
   resources:
     requests:
       memory: "128Mi"
@@ -8,6 +9,22 @@ pihole:
     limits:
       memory: "2Gi"
       cpu: "1"
+    ports:
+    - name: dns-tcp
+      containerPort: 53
+      protocol: TCP
+    - name: dns-udp
+      containerPort: 53
+      protocol: UDP
+    - name: dhcp
+      containerPort: 67
+      protocol: UDP
+    - name: http
+      containerPort: 80
+      protocol: TCP
+    - name: https
+      containerPort: 443
+      protocol: TCP
   hostNetwork: true
   dnsPolicy: "None"
   dnsConfig:

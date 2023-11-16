@@ -15,15 +15,16 @@ spec:
       imagePullPolicy: IfNotPresent
       env:
         - name: TZ
-          value: "America/Los_Angeles"
+          value: {{ .Values.pihole.tz }}
         - name: WEBPASSWORD
           value: {{ .Values.pihole.webpassword }}
       securityContext:
         privileged: true
       ports:
-        - containerPort: 53
-          protocol: TCP
-        # ... otros puertos ...
+        {{- range .Values.pihole.ports }}
+        - containerPort: {{ .containerPort }}
+          protocol: {{ .protocol }}
+        {{- end }} 
       resources:
         requests:
           memory: {{ .Values.pihole.resources.requests.memory }}
