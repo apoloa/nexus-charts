@@ -3,9 +3,9 @@ entries:
   pihole:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-17T00:07:32.901952+01:00"
+    created: "2023-11-17T02:54:58.774999+01:00"
     description: Pi Hole Kubernetes Application
-    digest: cb33a5986e2e4301a925d096d853cc0768ad9ad8776f2d2c3e70ea4feb69544e
+    digest: 815ba3c09c1d01d6cca72a18d2ca8ab5e8d3efb057d5c3ba843bbe0822d7cc60
     name: pihole
     type: application
     urls:
@@ -14,12 +14,12 @@ entries:
   ubiquiti-unifi-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-17T00:07:32.902275+01:00"
+    created: "2023-11-17T02:54:58.775415+01:00"
     description: Ubiquiti Unifi Controller Helm Chart
-    digest: 4c119b172ea25096be11d1222c6c3faeb2fbe0fbe967d770ac8a436059c16003
+    digest: c9e97c5f0bd57bc016f07ebfa66b6fd7aada35faa665afe6e31938ff1cfb3a02
     name: ubiquiti-unifi-controller
     type: application
     urls:
     - https://apoloa.github.io/nexus-charts/ubiquiti-unifi-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-17T00:07:32.900451+01:00"
+generated: "2023-11-17T02:54:58.774539+01:00"
