@@ -9,8 +9,11 @@ spec:
     app: pihole
   type: LoadBalancer
   loadBalancerIP: 192.168.1.230
-  ports:
+  ports: 
   - name: dns-tcp
     port: 53
-    targetPort: 53  
+    targetPort: dns  
     protocol: TCP
+  - name: dns-udp
+    port: 53
+    targetPort: dns-udp
