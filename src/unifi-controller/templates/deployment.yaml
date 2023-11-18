@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: unifi-controller
+  labels:
+    app: unifi-controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: unifi-controller
+  template: 
+    metadata:
+      labels:
+        app: unifi-controller
+        name: unifi-controller
+    spec:
+      containers: 
+      - name: unifi-controller
+        image: jacobalberty/unifi
+        env: 
+        - name: TZ
+          value: "Europe/Madrid"
+        - name: UNIFI_UID
+          value: "999"
+        - name: UNIFI_GID
+          value: "999"
+        - name: JVM_MAX_HEAP_SIZE
+          value: 1024M
+
+       
+
