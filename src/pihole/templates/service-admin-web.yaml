@@ -8,7 +8,7 @@ spec:
   selector:
     app: pihole
   type: LoadBalancer
-  loadBalancerIP: 10.0.0.200
+  loadBalancerIP: 10.0.0.201
   ports:
   - name: admin-web
     port: 80
