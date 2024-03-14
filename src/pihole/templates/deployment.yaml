@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: pihole
-        image: pihole/pihole:latest
+        image: pihole/pihole:2024.02.2
         env: 
         - name: TZ
           value: "Europe/Madrid"
