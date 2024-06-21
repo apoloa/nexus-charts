@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   nginx-reverse:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-06-22T00:26:05.659097+02:00"
+    description: A Helm chart for Kubernetes
+    digest: fa21b921c0d74a50a3e19040cfad8d0047017fc9773f717b1884ace3d84fcffd
+    name: nginx-reverse
+    type: application
+    urls:
+    - https://apoloa.github.io/nexus-charts/nginx-reverse-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-06-22T00:03:21.989023+02:00"
+    created: "2024-06-22T00:26:05.658338+02:00"
     description: A Helm chart for Kubernetes
     digest: 000513191738b54c80b3de1543cb779359dce0065fa94a2bf78182ec5b76b385
     name: nginx-reverse
@@ -14,9 +24,9 @@ entries:
   pihole:
   - apiVersion: v2
     appVersion: 2024.02.2
-    created: "2024-06-22T00:03:21.989257+02:00"
+    created: "2024-06-22T00:26:05.659327+02:00"
     description: Pi Hole Kubernetes Application
-    digest: 4cdaa3682dffd71b2af27098ef247ef54c3be56683224aa3aa139141d77a64a0
+    digest: ec15ff1d46ce39331bdeb3816070ee3b18f2b34ed33661268f87f39d5aceac65
     name: pihole
     type: application
     urls:
@@ -25,7 +35,7 @@ entries:
   ubiquiti-unifi-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-22T00:03:21.99049+02:00"
+    created: "2024-06-22T00:26:05.65966+02:00"
     description: Ubiquiti Unifi Controller Helm Chart
     digest: 68039c672da9b9e6b476975dc2adcb8f6c219b81b07116e4861ece73c640727d
     name: ubiquiti-unifi-controller
@@ -36,12 +46,12 @@ entries:
   unifi-controller:
   - apiVersion: v2
     appVersion: 8.0.28
-    created: "2024-06-22T00:03:21.990731+02:00"
+    created: "2024-06-22T00:26:05.659888+02:00"
     description: A Helm chart for Kubernetes
-    digest: dda2b660047b858799ff054703d5f46330b8fb64ed103654ba0f609affe59391
+    digest: 1aa873d045d57bc96a3ccbf17af82df139fbfbbc9950f3037f53dafbf7765664
     name: unifi-controller
     type: application
     urls:
     - https://apoloa.github.io/nexus-charts/unifi-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-22T00:03:21.988655+02:00"
+generated: "2024-06-22T00:26:05.657736+02:00"
