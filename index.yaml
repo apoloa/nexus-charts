@@ -1,11 +1,22 @@
 apiVersion: v1
 entries:
+  nginx-reverse:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-06-22T00:03:21.989023+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 000513191738b54c80b3de1543cb779359dce0065fa94a2bf78182ec5b76b385
+    name: nginx-reverse
+    type: application
+    urls:
+    - https://apoloa.github.io/nexus-charts/nginx-reverse-0.1.0.tgz
+    version: 0.1.0
   pihole:
   - apiVersion: v2
     appVersion: 2024.02.2
-    created: "2024-03-14T23:49:37.666419+01:00"
+    created: "2024-06-22T00:03:21.989257+02:00"
     description: Pi Hole Kubernetes Application
-    digest: 418994791f05224eaf1f0624b5c961312aaa9ab90a13b986cf1b64c63e9db7d5
+    digest: 4cdaa3682dffd71b2af27098ef247ef54c3be56683224aa3aa139141d77a64a0
     name: pihole
     type: application
     urls:
@@ -14,7 +25,7 @@ entries:
   ubiquiti-unifi-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-03-14T23:49:37.666761+01:00"
+    created: "2024-06-22T00:03:21.99049+02:00"
     description: Ubiquiti Unifi Controller Helm Chart
     digest: 68039c672da9b9e6b476975dc2adcb8f6c219b81b07116e4861ece73c640727d
     name: ubiquiti-unifi-controller
@@ -25,12 +36,12 @@ entries:
   unifi-controller:
   - apiVersion: v2
     appVersion: 8.0.28
-    created: "2024-03-14T23:49:37.666987+01:00"
+    created: "2024-06-22T00:03:21.990731+02:00"
     description: A Helm chart for Kubernetes
-    digest: 512df3eee7a34761b214b029041032fdf36bad7d50cd4ce5dfa53d93c2febf9b
+    digest: dda2b660047b858799ff054703d5f46330b8fb64ed103654ba0f609affe59391
     name: unifi-controller
     type: application
     urls:
     - https://apoloa.github.io/nexus-charts/unifi-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-14T23:49:37.666115+01:00"
+generated: "2024-06-22T00:03:21.988655+02:00"
