@@ -1,0 +1,8 @@
+replicaCount: 1
+
+image:
+  repository: registry.k3s.casa/http-proxy
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+

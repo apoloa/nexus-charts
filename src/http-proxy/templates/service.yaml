@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "http-proxy.fullname" . }}
+  labels:
+    {{- include "http-proxy.labels" . | nindent 4 }}
+spec:
+  type: LoadBalancer
+  loadBalancerIP: {{ include "http-proxy.name" . }}
+  ports:
+    - port: 80
+      targetPort: 3000
+  selector:
+    app: {{ include "http-proxy.name" . }}
