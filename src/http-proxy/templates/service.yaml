@@ -6,7 +6,7 @@ metadata:
     {{- include "http-proxy.labels" . | nindent 4 }}
 spec:
   type: LoadBalancer
-  loadBalancerIP: {{ include "http-proxy.name" . }}
+  loadBalancerIP: {{ .Values.loadBalancerIP }}
   ports:
     - port: 80
       targetPort: 3000
