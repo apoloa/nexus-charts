@@ -13,6 +13,7 @@ loadBalancerIP: "10.0.3.5"
 tz: "Europe/Madrid"
 
 service:
+  type: LoadBalancer
   port: 8123
   targetPort: 80
 

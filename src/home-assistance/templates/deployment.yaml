@@ -3,15 +3,15 @@ kind: Deployment
 metadata:
   name: {{ include "home-assistance.fullname" . }}
   labels:
-    app: {{ include "home-assistance.name" . }}
+    app: {{ include "home-assistance.fullname" . }}
 spec:
   selector:
     matchLabels:
-      app: {{ include "home-assistance.name" . }}
+      app: {{ include "home-assistance.fullname" . }}
   template:
     metadata:
       labels:
-        app: {{ include "home-assistance.name" . }}
+        app: {{ include "home-assistance.fullname" . }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
@@ -19,6 +19,9 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           securityContext:
             privileged: null
+          env:
+            - name: TZ
+              value: {{ .Values.tz }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

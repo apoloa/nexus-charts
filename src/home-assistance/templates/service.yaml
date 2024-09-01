@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "home-assistance.fullname" . }}
+  annotations:
+    metallb.universe.tf/allow-shared-ip: {{ include "home-assistance.fullname" . }}
 spec:
   type: {{ .Values.service.type }}
   loadBalancerIP: {{ .Values.loadBalancerIP }}

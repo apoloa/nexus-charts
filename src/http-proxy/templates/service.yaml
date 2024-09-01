@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "http-proxy.fullname" . }}
-  labels:
-    {{- include "http-proxy.labels" . | nindent 4 }}
+  annotations:
+    metallb.universe.tf/allow-shared-ip: nginx-service
 spec:
   type: LoadBalancer
   loadBalancerIP: {{ .Values.loadBalancerIP }}
