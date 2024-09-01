@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   home-assistance:
   - apiVersion: v2
+    appVersion: 2024.8.3
+    created: "2024-09-02T01:07:39.685864+02:00"
+    description: A Helm chart for Kubernetes
+    digest: beb64c9bb53898d67549b42cfddc08a6c4dafa9c152e574b1b82b2ce4fa547fd
+    name: home-assistance
+    type: application
+    urls:
+    - https://apoloa.github.io/nexus-charts/home-assistance-2024.8.3.tgz
+    version: 2024.8.3
+  - apiVersion: v2
     appVersion: 2022.8.3
-    created: "2024-09-02T01:03:55.066518+02:00"
+    created: "2024-09-02T01:07:39.685702+02:00"
     description: A Helm chart for Kubernetes
     digest: 42f711e7e7720c4446e3716e8bddb00ff77c9ea98baf1099178f2372cf4246b0
     name: home-assistance
@@ -14,9 +24,9 @@ entries:
   http-proxy:
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2024-09-02T01:03:55.069538+02:00"
+    created: "2024-09-02T01:07:39.688474+02:00"
     description: A Helm chart for Kubernetes
-    digest: c1d4c9c2f7fe2098e788764039ba3d266485b4c5798379b129394642312b5f50
+    digest: 2513924ec81a555107278b2eb82e29e09441d1a605dcadfc4e421cb3c123a434
     name: http-proxy
     type: application
     urls:
@@ -24,7 +34,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-09-02T01:03:55.06822+02:00"
+    created: "2024-09-02T01:07:39.68715+02:00"
     description: A Helm chart for Kubernetes
     digest: d8ef2d03bb26fc961855546fc11b035557d6a81aea3dacebd9084227f0fe5483
     name: http-proxy
@@ -35,9 +45,9 @@ entries:
   mosquitto:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-09-02T01:03:55.069766+02:00"
+    created: "2024-09-02T01:07:39.688675+02:00"
     description: A Helm chart for Kubernetes
-    digest: e762c209996571851761f5f243f2776527a0c1936c0fc3e8c9afe92620ef79a2
+    digest: b92ec3454914ca9d2e6105805eded5c9cae545e0f371f3ae7989ea2e988324fd
     name: mosquitto
     type: application
     urls:
@@ -46,9 +56,9 @@ entries:
   nginx-reverse:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2024-09-02T01:03:55.069931+02:00"
+    created: "2024-09-02T01:07:39.688984+02:00"
     description: A Helm chart for Kubernetes
-    digest: 45802693dabe02e742d1c2e917e6ec9c192cda3df6b5b851aeb6e9f6c19a5fb1
+    digest: 5931a63fd120af80d30a964c9d8e5649f37476ec44c2ae30656266a0f760a188
     name: nginx-reverse
     type: application
     urls:
@@ -56,7 +66,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-02T01:03:55.069854+02:00"
+    created: "2024-09-02T01:07:39.688866+02:00"
     description: A Helm chart for Kubernetes
     digest: 000513191738b54c80b3de1543cb779359dce0065fa94a2bf78182ec5b76b385
     name: nginx-reverse
@@ -67,9 +77,9 @@ entries:
   pihole:
   - apiVersion: v2
     appVersion: 2024.02.2
-    created: "2024-09-02T01:03:55.070016+02:00"
+    created: "2024-09-02T01:07:39.689343+02:00"
     description: Pi Hole Kubernetes Application
-    digest: a47741ba78321588254882c8ca00fe77bb2d903e7a2d219812391ec68f7462b3
+    digest: 2fd090b03c3dbbeb3f2ede8ba1b558de130c81d7875e7b569aa3c0808ae5d262
     name: pihole
     type: application
     urls:
@@ -78,7 +88,7 @@ entries:
   ubiquiti-unifi-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-09-02T01:03:55.070167+02:00"
+    created: "2024-09-02T01:07:39.689519+02:00"
     description: Ubiquiti Unifi Controller Helm Chart
     digest: 68039c672da9b9e6b476975dc2adcb8f6c219b81b07116e4861ece73c640727d
     name: ubiquiti-unifi-controller
@@ -89,12 +99,12 @@ entries:
   unifi-controller:
   - apiVersion: v2
     appVersion: 8.0.28
-    created: "2024-09-02T01:03:55.070237+02:00"
+    created: "2024-09-02T01:07:39.689596+02:00"
     description: A Helm chart for Kubernetes
-    digest: 768457b358be744bc1dbbd866a93792a85bb2e231517489f31a929580cc89fba
+    digest: 6c5eab0156f9ef33d59a74761e174401288b24530941add2d04b8a78225fdb7d
     name: unifi-controller
     type: application
     urls:
     - https://apoloa.github.io/nexus-charts/unifi-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-02T01:03:55.066307+02:00"
+generated: "2024-09-02T01:07:39.685465+02:00"
