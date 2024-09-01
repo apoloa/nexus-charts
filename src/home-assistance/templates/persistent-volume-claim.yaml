@@ -1,0 +1,10 @@
+kind: PersistentVolumeClaim
+apiVersion: 1
+metadata:
+  name: home-assistant-config-root
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

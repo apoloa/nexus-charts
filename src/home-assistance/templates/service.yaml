@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "home-assistance.fullname" . }}
+spec:
+  type: {{ .Values.service.type }}
+  loadBalancerIP: {{ .Values.loadBalancerIP }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.targetPort }}
+      protocol: TCP
+  selector:
+    name: {{ include "home-assistance.fullname" . }}

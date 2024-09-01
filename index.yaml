@@ -1,11 +1,22 @@
 apiVersion: v1
 entries:
+  home-assistance:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-09-02T00:31:50.748487+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 565613f417ea6063eb2cb5c5237556e12bebda1b235e656f0121f770fa4b89a5
+    name: home-assistance
+    type: application
+    urls:
+    - https://apoloa.github.io/nexus-charts/home-assistance-0.1.0.tgz
+    version: 0.1.0
   http-proxy:
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2024-06-25T13:12:09.222894+02:00"
+    created: "2024-09-02T00:31:50.75109+02:00"
     description: A Helm chart for Kubernetes
-    digest: 3bf5eb0394bafba102905f9ea3a2f970eec0c249674adb784a02e2723e350f4b
+    digest: 50bc30ab1cd6af2a7670fea04fc358db36535d3f0741ddcd68ce6362944ff99c
     name: http-proxy
     type: application
     urls:
@@ -13,7 +24,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-25T13:12:09.221051+02:00"
+    created: "2024-09-02T00:31:50.749807+02:00"
     description: A Helm chart for Kubernetes
     digest: d8ef2d03bb26fc961855546fc11b035557d6a81aea3dacebd9084227f0fe5483
     name: http-proxy
@@ -21,12 +32,23 @@ entries:
     urls:
     - https://apoloa.github.io/nexus-charts/http-proxy-0.1.0.tgz
     version: 0.1.0
+  mosquitto:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-09-02T00:31:50.75129+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 0cc625d60ebeeee15f4984fc5b5bf1119b7a347fd5ae0551fc5b8423579a9e50
+    name: mosquitto
+    type: application
+    urls:
+    - https://apoloa.github.io/nexus-charts/mosquitto-0.1.0.tgz
+    version: 0.1.0
   nginx-reverse:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2024-06-25T13:12:09.22339+02:00"
+    created: "2024-09-02T00:31:50.751427+02:00"
     description: A Helm chart for Kubernetes
-    digest: c16030415a19115986cd5acc2d14d1accbf7e5d4d47041765a8773f27f16e393
+    digest: 409adc6ee5628af021f42e8a86fc16c868710eb32f323c8c5828d0a6fcbb6c7d
     name: nginx-reverse
     type: application
     urls:
@@ -34,7 +56,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-06-25T13:12:09.223144+02:00"
+    created: "2024-09-02T00:31:50.751358+02:00"
     description: A Helm chart for Kubernetes
     digest: 000513191738b54c80b3de1543cb779359dce0065fa94a2bf78182ec5b76b385
     name: nginx-reverse
@@ -45,9 +67,9 @@ entries:
   pihole:
   - apiVersion: v2
     appVersion: 2024.02.2
-    created: "2024-06-25T13:12:09.223579+02:00"
+    created: "2024-09-02T00:31:50.751505+02:00"
     description: Pi Hole Kubernetes Application
-    digest: 665523b23d18e41acad12c3638c0a612003f008a89c80d37b036f11111478686
+    digest: 7362c08d388317dfe04e75e4942c940d7a8bf148560192b71487df98d09f77ef
     name: pihole
     type: application
     urls:
@@ -56,7 +78,7 @@ entries:
   ubiquiti-unifi-controller:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-06-25T13:12:09.223839+02:00"
+    created: "2024-09-02T00:31:50.751638+02:00"
     description: Ubiquiti Unifi Controller Helm Chart
     digest: 68039c672da9b9e6b476975dc2adcb8f6c219b81b07116e4861ece73c640727d
     name: ubiquiti-unifi-controller
@@ -67,12 +89,12 @@ entries:
   unifi-controller:
   - apiVersion: v2
     appVersion: 8.0.28
-    created: "2024-06-25T13:12:09.224144+02:00"
+    created: "2024-09-02T00:31:50.751712+02:00"
     description: A Helm chart for Kubernetes
-    digest: ddf82d391b8a48db75e8b2e5bafb9377199b2fc105f69633c736607f2f4bec7d
+    digest: c2fab131f958dc9ce1532cbb407994c7819a629eb25e459af2adbf1c8ffef953
     name: unifi-controller
     type: application
     urls:
     - https://apoloa.github.io/nexus-charts/unifi-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-25T13:12:09.218824+02:00"
+generated: "2024-09-02T00:31:50.748203+02:00"
