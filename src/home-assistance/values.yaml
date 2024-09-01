@@ -14,8 +14,8 @@ tz: "Europe/Madrid"
 
 service:
   type: LoadBalancer
-  port: 8123
-  targetPort: 80
+  port: 80
+  targetPort: 8123
 
 livenessProbe:
   tcpSocket:
