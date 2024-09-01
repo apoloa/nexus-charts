@@ -1,17 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "home-assistance.name" . }}
+  name: {{ include "home-assistance.fullname" . }}
   labels:
-    app: {{ include "home-assistance.name" . }}
+    app:  {{ include  "home-assistance.name" . }}
 spec:
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "home-assistance.name" . }}
+      app: {{ include  "home-assistance.name" . }}
   template:
     metadata:
       labels:
-        app: {{ include "home-assistance.name" . }}
+        app: {{ include  "home-assistance.name" . }}
+        name: {{ include "home-assistance.fullname" . }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
